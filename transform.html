@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transfom</title>
+    <style>
+        .field{
+            height: 600px;
+            border: 5px solid black;
+        }
+        .field:hover .bat{
+            transform:rotate(-70deg) ;
+            transform-origin: top right;
+        }
+        .bat{
+            transition: transform 0.2s;
+            margin-top: 20px;
+        }
+        .field:hover .ball{
+            transform: translatex(2000px) translateY(-500px) ;
+        }
+       .ball{
+        width: 80px;
+        height: 80px;
+        background-color:rgb(97, 6, 6);
+        border-radius: 50%;
+        position: relative;
+        left: 605px;
+        transition: transform .1s 0.2s ;
+        transform: rotate(-30deg);
+        }
+        .ball img{
+            width: 80px;
+            height: 80px;
+        }
+        @media screen and (max-width:576px) {
+         .field{
+        width: 99%;
+         }
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+         <img src="images/bat.png" alt="" class="bat">
+         <div class="ball"><img src="ball.jpeg" alt=""></div>
+         
+    </div>
+
+</body>
+</html>
